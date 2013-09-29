@@ -36,8 +36,8 @@ TEST(TimeType, DegreeOfFivePastTwentytwo) {
     EXPECT_DOUBLE_EQ(90.0, t.getDegree());
 }
 
-TEST(TimeType, DegreeOfFiveToHalfPastFour) {    
-    TimeType t( 4, 25);
+TEST(TimeType, DegreeOfFivePastHalfPastFour) {    
+    TimeType t( 4, 35);
     EXPECT_DOUBLE_EQ(90.0, t.getDegree());
 }
 
