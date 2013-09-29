@@ -7,7 +7,8 @@
 
 #ifndef TIMETYPE_H
 #define	TIMETYPE_H
-
+namespace sandbox {
+    
 class TimeType {
 private:
     unsigned short int hour;
@@ -16,6 +17,8 @@ public:
     TimeType(const int hour, const int minute);
     double getDegree() const;
 };
+
+}
 
 #endif	/* TIMETYPE_H */
 
