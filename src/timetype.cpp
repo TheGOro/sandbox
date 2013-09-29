@@ -1,5 +1,6 @@
 
 #include "timetype.h"
+#include <cmath>
 #include <stdexcept>
 
 TimeType::TimeType(const int hour, const int minute) {
@@ -11,7 +12,10 @@ TimeType::TimeType(const int hour, const int minute) {
     this->hour = hour;
     this->minute = minute;
 }
+
 double TimeType::getDegree() const {
-    //int hourDegree(hour * 360 / 24);
-    return 0.0;
+    double hourDegree = (hour % 12) * 30;
+    double minuteDegree = minute * 6;
+    double degree = std::abs(hourDegree - minuteDegree);
+    return degree > 180.0 ? degree - 180.0 : degree;
 }
