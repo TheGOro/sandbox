@@ -11,6 +11,7 @@ TimeType::TimeType(const int hour, const int minute) {
     this->hour = hour;
     this->minute = minute;
 }
-double TimeType::getDegree() {
-    int hourDegree(hour * 360 / 24);
+double TimeType::getDegree() const {
+    //int hourDegree(hour * 360 / 24);
+    return 0.0;
 }
