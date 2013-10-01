@@ -13,6 +13,8 @@ if (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 endif()
 
+include(TestForSTDNamespace)
+
 # Unit testing
 option(build_tests "Build all unit test." ON)
 if(build_tests)
