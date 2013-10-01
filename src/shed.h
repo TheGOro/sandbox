@@ -14,8 +14,16 @@
 namespace sandbox {
     inline bool isPalindrome(std::string const&);
     inline bool isPalindrome(char const*);
-    inline bool isLittleEndian();
-    inline bool isBigEndian();
+    inline bool isLittleEndian() {
+        int i = 1;
+        char* p = (char*) &i;
+        return (*p & (char)1);
+    }
+    
+    inline bool isBigEndian() {
+        return !isLittleEndian();
+    }
+
     inline std::string& reverse(std::string&);
     inline std::string& reverseWords(std::string&);
     
