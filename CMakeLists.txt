@@ -16,21 +16,32 @@ endif()
 # Unit testing
 option(build_tests "Build all unit test." ON)
 if(build_tests)
+    # Check for GoogleTest
+    find_package(GTEST)
+    if(NOT GTEST_FOUND)
+        message(FATAL_ERROR "You need GoogleTest to make test")
+    endif()
+    include_directories(${GTEST_INCLUDE_DIRS})
+
+    # Check for Threads (we prefer pthread)
+    set(CMAKE_THREAD_PREFER_PTHREAD ON)
+    find_package(THREADS)
+    if(NOT THREADS_FOUND)
+        message(FATAL_ERROR "You need a system thread library (like pthread) to use GoogleTest")
+    endif()
     enable_testing()
-    # Check for required headers for testing
-    check_include_files(gtest/gtest.h HAVE_GTEST_H)
 
     # TimeType tests
     set(TEST_TIMETYPE timetype_test)
     add_executable(${TEST_TIMETYPE} test/timetype_test.cpp src/timetype.cpp)
-    target_link_libraries(${TEST_TIMETYPE} pthread)
-    target_link_libraries(${TEST_TIMETYPE} gtest gtest_main)
+    target_link_libraries(${TEST_TIMETYPE} ${CMAKE_THREAD_LIBS_INIT})
+    target_link_libraries(${TEST_TIMETYPE} ${GTEST_BOTH_LIBRARIES})
     add_test(timetype-tests ${PROJECT_BINARY_DIR}/${TEST_TIMETYPE})
 
     # Shed tests
     set(TEST_SHED_SWAP shed_swap_test)
     add_executable(${TEST_SHED_SWAP} test/shed_swap_test.cpp src/shed.h)
-    target_link_libraries(${TEST_SHED_SWAP} pthread)
-    target_link_libraries(${TEST_SHED_SWAP} gtest gtest_main)
+    target_link_libraries(${TEST_SHED_SWAP} ${CMAKE_THREAD_LIBS_INIT})
+    target_link_libraries(${TEST_SHED_SWAP} ${GTEST_BOTH_LIBRARIES})
     add_test(shed-swap-tests ${PROJECT_BINARY_DIR}/${TEST_SHED_SWAP})
 endif()
