@@ -14,6 +14,7 @@ if (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
 endif()
 
 include(TestForSTDNamespace)
+add_executable(shed ${PROJECT_SOURCE_DIR}/*.cpp)
 
 # Unit testing
 option(build_tests "Build all unit test." ON)
@@ -41,9 +42,17 @@ if(build_tests)
     add_test(timetype-tests ${PROJECT_BINARY_DIR}/${TEST_TIMETYPE})
 
     # Shed tests
+    # - swap function
     set(TEST_SHED_SWAP shed_swap_test)
     add_executable(${TEST_SHED_SWAP} test/shed_swap_test.cpp src/shed.h)
     target_link_libraries(${TEST_SHED_SWAP} ${CMAKE_THREAD_LIBS_INIT})
     target_link_libraries(${TEST_SHED_SWAP} ${GTEST_BOTH_LIBRARIES})
     add_test(shed-swap-tests ${PROJECT_BINARY_DIR}/${TEST_SHED_SWAP})
+
+    # - isPalindrome function
+    set(TEST_SHED_PALINDROME shed_palindrome_test)
+    add_executable(${TEST_SHED_PALINDROME} test/shed_palindrome_test.cpp src/shed.h)
+    target_link_libraries(${TEST_SHED_PALINDROME} ${CMAKE_THREAD_LIBS_INIT})
+    target_link_libraries(${TEST_SHED_PALINDROME} ${GTEST_BOTH_LIBRARIES})
+    add_test(shed-palindrome-tests ${PROJECT_BINARY_DIR}/${TEST_SHED_PALINDROME})
 endif()
