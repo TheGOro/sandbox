@@ -1,0 +1,26 @@
+\hypertarget{options_8h}{\section{F\-:/\-Projects/sandbox/src/options.h File Reference}
+\label{options_8h}\index{F\-:/\-Projects/sandbox/src/options.\-h@{F\-:/\-Projects/sandbox/src/options.\-h}}
+}
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$ostream$>$}\\*
+{\ttfamily \#include $<$istream$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include \char`\"{}variant.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsandbox_1_1_options}{sandbox\-::\-Options}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacesandbox}{sandbox}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{namespacesandbox_a8ca45cec79e562a7f2322662d281d1b4}{sandbox\-::operator$<$$<$} (std\-::ostream \&output, Options \&options)
+\begin{DoxyCompactList}\small\item\em Writes all data to a output stream. \end{DoxyCompactList}\item 
+std\-::istream \& \hyperlink{namespacesandbox_ab63c581d554f481ae6d06c434db5f7e5}{sandbox\-::operator$>$$>$} (std\-::istream \&input, Options \&options)
+\begin{DoxyCompactList}\small\item\em Reads key value pairs from an input stream. it's throws Options\-::invalid\-\_\-format exception on misformatted input. \end{DoxyCompactList}\end{DoxyCompactItemize}

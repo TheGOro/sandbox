@@ -1,0 +1,143 @@
+\hypertarget{classsandbox_1_1_options}{\section{sandbox\-:\-:Options Class Reference}
+\label{classsandbox_1_1_options}\index{sandbox\-::\-Options@{sandbox\-::\-Options}}
+}
+
+
+{\ttfamily \#include $<$options.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ std\-::string, \\*
+\hyperlink{classsandbox_1_1_variant}{Variant} $>$\-::\hyperlink{classsandbox_1_1_options_a9198beb778c2c79387c07e658513f67e}{size\-\_\-type} \hyperlink{classsandbox_1_1_options_a9198beb778c2c79387c07e658513f67e}{size\-\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsandbox_1_1_variant}{Variant} \& \hyperlink{classsandbox_1_1_options_a4fe2e4746d733d22f47cc32d1c54c860}{operator\mbox{[}$\,$\mbox{]}} (std\-::string const \&key)
+\begin{DoxyCompactList}\small\item\em Operator to access a value via his key. \end{DoxyCompactList}\item 
+void \hyperlink{classsandbox_1_1_options_a13c5e5baca25cfb45c6b7bcc36d8baa8}{persist} () const 
+\item 
+void \hyperlink{classsandbox_1_1_options_aa2a685602e242e5aaf158be6d5da27b5}{persist\-As} (std\-::string const \&filename) const 
+\item 
+void \hyperlink{classsandbox_1_1_options_a5837cd3c1fdd46a56de119637d12cb62}{clear} ()
+\item 
+\hyperlink{classsandbox_1_1_options_a9198beb778c2c79387c07e658513f67e}{size\-\_\-type} \hyperlink{classsandbox_1_1_options_af760738139312e7ba9fd36763e7a607a}{count} (std\-::string const \&key) const 
+\item 
+bool \hyperlink{classsandbox_1_1_options_a8feb3fb138eb93299d67c37f3c3f605e}{empty} () const 
+\item 
+\hyperlink{classsandbox_1_1_options_a9198beb778c2c79387c07e658513f67e}{size\-\_\-type} \hyperlink{classsandbox_1_1_options_a283044e8a4a010d9c921305c779ea50d}{size} () const 
+\item 
+void \hyperlink{classsandbox_1_1_options_a3e6c36826aa7f9baf408c1b94a995fb0}{swap} (\hyperlink{classsandbox_1_1_options}{Options} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classsandbox_1_1_options_a48262220add64396ff9a3815815b6db2}{operator$<$$<$} (std\-::ostream \&, \hyperlink{classsandbox_1_1_options}{Options} \&options)
+\begin{DoxyCompactList}\small\item\em Writes all data to a output stream. \end{DoxyCompactList}\item 
+std\-::istream \& \hyperlink{classsandbox_1_1_options_a5ee987becff115c5d31195e8cbcd018e}{operator$>$$>$} (std\-::istream \&, \hyperlink{classsandbox_1_1_options}{Options} \&options)
+\begin{DoxyCompactList}\small\item\em Reads key value pairs from an input stream. it's throws Options\-::invalid\-\_\-format exception on misformatted input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Option store class 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsandbox_1_1_options_a9198beb778c2c79387c07e658513f67e}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!size\-\_\-type@{size\-\_\-type}}
+\index{size\-\_\-type@{size\-\_\-type}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{size\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<$std\-::string, {\bf Variant}$>$\-::{\bf size\-\_\-type} {\bf sandbox\-::\-Options\-::size\-\_\-type}}}\label{classsandbox_1_1_options_a9198beb778c2c79387c07e658513f67e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsandbox_1_1_options_a5837cd3c1fdd46a56de119637d12cb62}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!clear@{clear}}
+\index{clear@{clear}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void sandbox\-::\-Options\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_a5837cd3c1fdd46a56de119637d12cb62}
+\hypertarget{classsandbox_1_1_options_af760738139312e7ba9fd36763e7a607a}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!count@{count}}
+\index{count@{count}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Options\-::size\-\_\-type} sandbox\-::\-Options\-::count (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_af760738139312e7ba9fd36763e7a607a}
+\hypertarget{classsandbox_1_1_options_a8feb3fb138eb93299d67c37f3c3f605e}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!empty@{empty}}
+\index{empty@{empty}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool sandbox\-::\-Options\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_a8feb3fb138eb93299d67c37f3c3f605e}
+\hypertarget{classsandbox_1_1_options_a4fe2e4746d733d22f47cc32d1c54c860}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Variant} \& sandbox\-::\-Options\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_a4fe2e4746d733d22f47cc32d1c54c860}
+
+
+Operator to access a value via his key. 
+
+\hypertarget{classsandbox_1_1_options_a13c5e5baca25cfb45c6b7bcc36d8baa8}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!persist@{persist}}
+\index{persist@{persist}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{persist}]{\setlength{\rightskip}{0pt plus 5cm}void sandbox\-::\-Options\-::persist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_a13c5e5baca25cfb45c6b7bcc36d8baa8}
+\hypertarget{classsandbox_1_1_options_aa2a685602e242e5aaf158be6d5da27b5}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!persist\-As@{persist\-As}}
+\index{persist\-As@{persist\-As}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{persist\-As}]{\setlength{\rightskip}{0pt plus 5cm}void sandbox\-::\-Options\-::persist\-As (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{filename}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_aa2a685602e242e5aaf158be6d5da27b5}
+\hypertarget{classsandbox_1_1_options_a283044e8a4a010d9c921305c779ea50d}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!size@{size}}
+\index{size@{size}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Options\-::size\-\_\-type} sandbox\-::\-Options\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_a283044e8a4a010d9c921305c779ea50d}
+\hypertarget{classsandbox_1_1_options_a3e6c36826aa7f9baf408c1b94a995fb0}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!swap@{swap}}
+\index{swap@{swap}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void sandbox\-::\-Options\-::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Options} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classsandbox_1_1_options_a3e6c36826aa7f9baf408c1b94a995fb0}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classsandbox_1_1_options_a48262220add64396ff9a3815815b6db2}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{output, }
+\item[{{\bf Options} \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classsandbox_1_1_options_a48262220add64396ff9a3815815b6db2}
+
+
+Writes all data to a output stream. 
+
+\hypertarget{classsandbox_1_1_options_a5ee987becff115c5d31195e8cbcd018e}{\index{sandbox\-::\-Options@{sandbox\-::\-Options}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!sandbox::Options@{sandbox\-::\-Options}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{input, }
+\item[{{\bf Options} \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classsandbox_1_1_options_a5ee987becff115c5d31195e8cbcd018e}
+
+
+Reads key value pairs from an input stream. it's throws Options\-::invalid\-\_\-format exception on misformatted input. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+F\-:/\-Projects/sandbox/src/\hyperlink{options_8h}{options.\-h}\end{DoxyCompactItemize}

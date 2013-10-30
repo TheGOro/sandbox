@@ -1,0 +1,61 @@
+.TH "F:/Projects/sandbox/src/shed.h" 3 "Tue Oct 29 2013" "sandbox" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/Projects/sandbox/src/shed.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+\fC#include <algorithm>\fP
+.br
+\fC#include <iterator>\fP
+.br
+\fC#include <cstring>\fP
+.br
+
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "\fBsandbox\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename Iterator > bool \fBsandbox::isPalindrome\fP (Iterator front, Iterator back)"
+.br
+.ti -1c
+.RI "bool \fBsandbox::isPalindrome\fP (std::string const &str)"
+.br
+.ti -1c
+.RI "bool \fBsandbox::isPalindrome\fP (char const *str)"
+.br
+.ti -1c
+.RI "bool \fBsandbox::isLittleEndian\fP ()"
+.br
+.ti -1c
+.RI "bool \fBsandbox::isBigEndian\fP ()"
+.br
+.ti -1c
+.RI "template<typename T > void \fBsandbox::swap\fP (T &a, T &b)"
+.br
+.ti -1c
+.RI "template<typename Iterator > void \fBsandbox::swapInRange\fP (Iterator front, Iterator back)"
+.br
+.ti -1c
+.RI "std::string & \fBsandbox::reverse\fP (std::string &str)"
+.br
+.ti -1c
+.RI "char * \fBsandbox::reverse\fP (char *str)"
+.br
+.ti -1c
+.RI "std::string & \fBsandbox::reverseWords\fP (std::string &str)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sandbox from the source code\&.

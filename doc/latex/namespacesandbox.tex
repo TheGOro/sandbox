@@ -1,0 +1,183 @@
+\hypertarget{namespacesandbox}{\section{sandbox Namespace Reference}
+\label{namespacesandbox}\index{sandbox@{sandbox}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacesandbox_1_1pattern}{pattern}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsandbox_1_1_options}{Options}
+\item 
+class \hyperlink{classsandbox_1_1_time_type}{Time\-Type}
+\item 
+class \hyperlink{classsandbox_1_1_variant}{Variant}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{namespacesandbox_a8ca45cec79e562a7f2322662d281d1b4}{operator$<$$<$} (std\-::ostream \&output, \hyperlink{classsandbox_1_1_options}{Options} \&options)
+\begin{DoxyCompactList}\small\item\em Writes all data to a output stream. \end{DoxyCompactList}\item 
+std\-::istream \& \hyperlink{namespacesandbox_ab63c581d554f481ae6d06c434db5f7e5}{operator$>$$>$} (std\-::istream \&input, \hyperlink{classsandbox_1_1_options}{Options} \&options)
+\begin{DoxyCompactList}\small\item\em Reads key value pairs from an input stream. it's throws Options\-::invalid\-\_\-format exception on misformatted input. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator $>$ }\\void \hyperlink{namespacesandbox_a9f8d9538b5bfad2fd243b182598f994e}{print\-Out} (Iterator front, Iterator back)
+\item 
+{\footnotesize template$<$typename Iterator $>$ }\\void \hyperlink{namespacesandbox_a7d82a406c267d30ff1f27c5ff300437a}{quick\-Sort} (Iterator front, Iterator back)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::vector$<$ T $>$ \& \hyperlink{namespacesandbox_a85c255856530c2a1f629abb6bf2f4497}{quick\-Sort} (std\-::vector$<$ T $>$ \&sortable)
+\item 
+{\footnotesize template$<$typename Iterator $>$ }\\bool \hyperlink{namespacesandbox_a25a11dad06fc0cd1b3f9bc583f093636}{is\-Palindrome} (Iterator front, Iterator back)
+\item 
+bool \hyperlink{namespacesandbox_a4a569da66e67b46889d0c0597b7196b0}{is\-Palindrome} (std\-::string const \&str)
+\item 
+bool \hyperlink{namespacesandbox_a639859e1234594e142ea447fad2b3b34}{is\-Palindrome} (char const $\ast$str)
+\item 
+bool \hyperlink{namespacesandbox_a563b930dc7888d8ab257fe747fa53487}{is\-Little\-Endian} ()
+\item 
+bool \hyperlink{namespacesandbox_a550f00cb3d4e2ac434c7b76532e79573}{is\-Big\-Endian} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacesandbox_a78a289ddc885bdcb5383f1363c54db2c}{swap} (T \&a, T \&b)
+\item 
+{\footnotesize template$<$typename Iterator $>$ }\\void \hyperlink{namespacesandbox_af7dc9a62c4e56b2b4c4a12ff6e82a237}{swap\-In\-Range} (Iterator front, Iterator back)
+\item 
+std\-::string \& \hyperlink{namespacesandbox_acb1d210d07ad7665578cbcb47c995332}{reverse} (std\-::string \&str)
+\item 
+char $\ast$ \hyperlink{namespacesandbox_a71d57df2b65e2db22f1b6126cf5305ec}{reverse} (char $\ast$str)
+\item 
+std\-::string \& \hyperlink{namespacesandbox_aa4f703c0251f20815a2f7d99bf55b9a8}{reverse\-Words} (std\-::string \&str)
+\item 
+std\-::ostream \& \hyperlink{namespacesandbox_a1d6485022eb73d061719402a29c67183}{operator$<$$<$} (std\-::ostream \&output, \hyperlink{classsandbox_1_1_variant}{Variant} const \&variant)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesandbox_a550f00cb3d4e2ac434c7b76532e79573}{\index{sandbox@{sandbox}!is\-Big\-Endian@{is\-Big\-Endian}}
+\index{is\-Big\-Endian@{is\-Big\-Endian}!sandbox@{sandbox}}
+\subsubsection[{is\-Big\-Endian}]{\setlength{\rightskip}{0pt plus 5cm}bool sandbox\-::is\-Big\-Endian (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a550f00cb3d4e2ac434c7b76532e79573}
+\hypertarget{namespacesandbox_a563b930dc7888d8ab257fe747fa53487}{\index{sandbox@{sandbox}!is\-Little\-Endian@{is\-Little\-Endian}}
+\index{is\-Little\-Endian@{is\-Little\-Endian}!sandbox@{sandbox}}
+\subsubsection[{is\-Little\-Endian}]{\setlength{\rightskip}{0pt plus 5cm}bool sandbox\-::is\-Little\-Endian (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a563b930dc7888d8ab257fe747fa53487}
+\hypertarget{namespacesandbox_a25a11dad06fc0cd1b3f9bc583f093636}{\index{sandbox@{sandbox}!is\-Palindrome@{is\-Palindrome}}
+\index{is\-Palindrome@{is\-Palindrome}!sandbox@{sandbox}}
+\subsubsection[{is\-Palindrome}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator $>$ bool sandbox\-::is\-Palindrome (
+\begin{DoxyParamCaption}
+\item[{Iterator}]{front, }
+\item[{Iterator}]{back}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a25a11dad06fc0cd1b3f9bc583f093636}
+\hypertarget{namespacesandbox_a4a569da66e67b46889d0c0597b7196b0}{\index{sandbox@{sandbox}!is\-Palindrome@{is\-Palindrome}}
+\index{is\-Palindrome@{is\-Palindrome}!sandbox@{sandbox}}
+\subsubsection[{is\-Palindrome}]{\setlength{\rightskip}{0pt plus 5cm}bool sandbox\-::is\-Palindrome (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a4a569da66e67b46889d0c0597b7196b0}
+\hypertarget{namespacesandbox_a639859e1234594e142ea447fad2b3b34}{\index{sandbox@{sandbox}!is\-Palindrome@{is\-Palindrome}}
+\index{is\-Palindrome@{is\-Palindrome}!sandbox@{sandbox}}
+\subsubsection[{is\-Palindrome}]{\setlength{\rightskip}{0pt plus 5cm}bool sandbox\-::is\-Palindrome (
+\begin{DoxyParamCaption}
+\item[{char const $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a639859e1234594e142ea447fad2b3b34}
+\hypertarget{namespacesandbox_a8ca45cec79e562a7f2322662d281d1b4}{\index{sandbox@{sandbox}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!sandbox@{sandbox}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& sandbox\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{output, }
+\item[{Options \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a8ca45cec79e562a7f2322662d281d1b4}
+
+
+Writes all data to a output stream. 
+
+\hypertarget{namespacesandbox_a1d6485022eb73d061719402a29c67183}{\index{sandbox@{sandbox}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!sandbox@{sandbox}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& sandbox\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{output, }
+\item[{Variant const \&}]{variant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a1d6485022eb73d061719402a29c67183}
+\hypertarget{namespacesandbox_ab63c581d554f481ae6d06c434db5f7e5}{\index{sandbox@{sandbox}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!sandbox@{sandbox}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::istream\& sandbox\-::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{input, }
+\item[{Options \&}]{options}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_ab63c581d554f481ae6d06c434db5f7e5}
+
+
+Reads key value pairs from an input stream. it's throws Options\-::invalid\-\_\-format exception on misformatted input. 
+
+\hypertarget{namespacesandbox_a9f8d9538b5bfad2fd243b182598f994e}{\index{sandbox@{sandbox}!print\-Out@{print\-Out}}
+\index{print\-Out@{print\-Out}!sandbox@{sandbox}}
+\subsubsection[{print\-Out}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator $>$ void sandbox\-::print\-Out (
+\begin{DoxyParamCaption}
+\item[{Iterator}]{front, }
+\item[{Iterator}]{back}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a9f8d9538b5bfad2fd243b182598f994e}
+\hypertarget{namespacesandbox_a7d82a406c267d30ff1f27c5ff300437a}{\index{sandbox@{sandbox}!quick\-Sort@{quick\-Sort}}
+\index{quick\-Sort@{quick\-Sort}!sandbox@{sandbox}}
+\subsubsection[{quick\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator $>$ void sandbox\-::quick\-Sort (
+\begin{DoxyParamCaption}
+\item[{Iterator}]{front, }
+\item[{Iterator}]{back}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a7d82a406c267d30ff1f27c5ff300437a}
+\hypertarget{namespacesandbox_a85c255856530c2a1f629abb6bf2f4497}{\index{sandbox@{sandbox}!quick\-Sort@{quick\-Sort}}
+\index{quick\-Sort@{quick\-Sort}!sandbox@{sandbox}}
+\subsubsection[{quick\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::vector$<$T$>$\& sandbox\-::quick\-Sort (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ T $>$ \&}]{sortable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a85c255856530c2a1f629abb6bf2f4497}
+\hypertarget{namespacesandbox_acb1d210d07ad7665578cbcb47c995332}{\index{sandbox@{sandbox}!reverse@{reverse}}
+\index{reverse@{reverse}!sandbox@{sandbox}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string\& sandbox\-::reverse (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_acb1d210d07ad7665578cbcb47c995332}
+\hypertarget{namespacesandbox_a71d57df2b65e2db22f1b6126cf5305ec}{\index{sandbox@{sandbox}!reverse@{reverse}}
+\index{reverse@{reverse}!sandbox@{sandbox}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ sandbox\-::reverse (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a71d57df2b65e2db22f1b6126cf5305ec}
+\hypertarget{namespacesandbox_aa4f703c0251f20815a2f7d99bf55b9a8}{\index{sandbox@{sandbox}!reverse\-Words@{reverse\-Words}}
+\index{reverse\-Words@{reverse\-Words}!sandbox@{sandbox}}
+\subsubsection[{reverse\-Words}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string\& sandbox\-::reverse\-Words (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_aa4f703c0251f20815a2f7d99bf55b9a8}
+\hypertarget{namespacesandbox_a78a289ddc885bdcb5383f1363c54db2c}{\index{sandbox@{sandbox}!swap@{swap}}
+\index{swap@{swap}!sandbox@{sandbox}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void sandbox\-::swap (
+\begin{DoxyParamCaption}
+\item[{T \&}]{a, }
+\item[{T \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_a78a289ddc885bdcb5383f1363c54db2c}
+\hypertarget{namespacesandbox_af7dc9a62c4e56b2b4c4a12ff6e82a237}{\index{sandbox@{sandbox}!swap\-In\-Range@{swap\-In\-Range}}
+\index{swap\-In\-Range@{swap\-In\-Range}!sandbox@{sandbox}}
+\subsubsection[{swap\-In\-Range}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator $>$ void sandbox\-::swap\-In\-Range (
+\begin{DoxyParamCaption}
+\item[{Iterator}]{front, }
+\item[{Iterator}]{back}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacesandbox_af7dc9a62c4e56b2b4c4a12ff6e82a237}

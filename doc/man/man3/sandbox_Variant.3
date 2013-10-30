@@ -1,0 +1,86 @@
+.TH "sandbox::Variant" 3 "Tue Oct 29 2013" "sandbox" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sandbox::Variant \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <variant\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVariant\fP ()"
+.br
+.ti -1c
+.RI "\fBVariant\fP (double const value)"
+.br
+.ti -1c
+.RI "\fBVariant\fP (float const value)"
+.br
+.ti -1c
+.RI "\fBVariant\fP (int const value)"
+.br
+.ti -1c
+.RI "\fBVariant\fP (char const *value)"
+.br
+.ti -1c
+.RI "\fBVariant\fP (std::string const &value)"
+.br
+.ti -1c
+.RI "double \fBtoDouble\fP () const "
+.br
+.ti -1c
+.RI "float \fBtoFloat\fP () const "
+.br
+.ti -1c
+.RI "int \fBtoInt\fP () const "
+.br
+.ti -1c
+.RI "std::string \fBtoString\fP () const "
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &output, \fBVariant\fP const &variant)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A union like type to store exactly one vale of the intrinsic or string types 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "sandbox::Variant::Variant ()"
+
+.SS "sandbox::Variant::Variant (double constvalue)"
+
+.SS "sandbox::Variant::Variant (float constvalue)"
+
+.SS "sandbox::Variant::Variant (int constvalue)"
+
+.SS "sandbox::Variant::Variant (char const *value)"
+
+.SS "sandbox::Variant::Variant (std::string const &value)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "double sandbox::Variant::toDouble () const\fC [inline]\fP"
+
+.SS "float sandbox::Variant::toFloat () const\fC [inline]\fP"
+
+.SS "int sandbox::Variant::toInt () const\fC [inline]\fP"
+
+.SS "std::string sandbox::Variant::toString () const\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream& operator<< (std::ostream &output, \fBVariant\fP const &variant)\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sandbox from the source code\&.

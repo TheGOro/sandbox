@@ -1,0 +1,101 @@
+.TH "sandbox::Options" 3 "Tue Oct 29 2013" "sandbox" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sandbox::Options \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <options\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::map< std::string, 
+.br
+\fBVariant\fP >::\fBsize_type\fP \fBsize_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVariant\fP & \fBoperator[]\fP (std::string const &key)"
+.br
+.RI "\fIOperator to access a value via his key\&. \fP"
+.ti -1c
+.RI "void \fBpersist\fP () const "
+.br
+.ti -1c
+.RI "void \fBpersistAs\fP (std::string const &filename) const "
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "\fBsize_type\fP \fBcount\fP (std::string const &key) const "
+.br
+.ti -1c
+.RI "bool \fBempty\fP () const "
+.br
+.ti -1c
+.RI "\fBsize_type\fP \fBsize\fP () const "
+.br
+.ti -1c
+.RI "void \fBswap\fP (\fBOptions\fP &other)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &, \fBOptions\fP &options)"
+.br
+.RI "\fIWrites all data to a output stream\&. \fP"
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &, \fBOptions\fP &options)"
+.br
+.RI "\fIReads key value pairs from an input stream\&. it's throws Options::invalid_format exception on misformatted input\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Option store class 
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef std::map<std::string, \fBVariant\fP>::\fBsize_type\fP \fBsandbox::Options::size_type\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void sandbox::Options::clear ()\fC [inline]\fP"
+
+.SS "\fBOptions::size_type\fP sandbox::Options::count (std::string const &key) const\fC [inline]\fP"
+
+.SS "bool sandbox::Options::empty () const\fC [inline]\fP"
+
+.SS "\fBVariant\fP & sandbox::Options::operator[] (std::string const &key)\fC [inline]\fP"
+
+.PP
+Operator to access a value via his key\&. 
+.SS "void sandbox::Options::persist () const\fC [inline]\fP"
+
+.SS "void sandbox::Options::persistAs (std::string const &filename) const\fC [inline]\fP"
+
+.SS "\fBOptions::size_type\fP sandbox::Options::size () const\fC [inline]\fP"
+
+.SS "void sandbox::Options::swap (\fBOptions\fP &other)\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream& operator<< (std::ostream &output, \fBOptions\fP &options)\fC [friend]\fP"
+
+.PP
+Writes all data to a output stream\&. 
+.SS "std::istream& operator>> (std::istream &input, \fBOptions\fP &options)\fC [friend]\fP"
+
+.PP
+Reads key value pairs from an input stream\&. it's throws Options::invalid_format exception on misformatted input\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sandbox from the source code\&.

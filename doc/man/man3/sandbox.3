@@ -1,0 +1,123 @@
+.TH "sandbox" 3 "Tue Oct 29 2013" "sandbox" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sandbox \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "\fBpattern\fP"
+.br
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBOptions\fP"
+.br
+.ti -1c
+.RI "class \fBTimeType\fP"
+.br
+.ti -1c
+.RI "class \fBVariant\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &output, \fBOptions\fP &options)"
+.br
+.RI "\fIWrites all data to a output stream\&. \fP"
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &input, \fBOptions\fP &options)"
+.br
+.RI "\fIReads key value pairs from an input stream\&. it's throws Options::invalid_format exception on misformatted input\&. \fP"
+.ti -1c
+.RI "template<typename Iterator > void \fBprintOut\fP (Iterator front, Iterator back)"
+.br
+.ti -1c
+.RI "template<typename Iterator > void \fBquickSort\fP (Iterator front, Iterator back)"
+.br
+.ti -1c
+.RI "template<typename T > std::vector< T > & \fBquickSort\fP (std::vector< T > &sortable)"
+.br
+.ti -1c
+.RI "template<typename Iterator > bool \fBisPalindrome\fP (Iterator front, Iterator back)"
+.br
+.ti -1c
+.RI "bool \fBisPalindrome\fP (std::string const &str)"
+.br
+.ti -1c
+.RI "bool \fBisPalindrome\fP (char const *str)"
+.br
+.ti -1c
+.RI "bool \fBisLittleEndian\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisBigEndian\fP ()"
+.br
+.ti -1c
+.RI "template<typename T > void \fBswap\fP (T &a, T &b)"
+.br
+.ti -1c
+.RI "template<typename Iterator > void \fBswapInRange\fP (Iterator front, Iterator back)"
+.br
+.ti -1c
+.RI "std::string & \fBreverse\fP (std::string &str)"
+.br
+.ti -1c
+.RI "char * \fBreverse\fP (char *str)"
+.br
+.ti -1c
+.RI "std::string & \fBreverseWords\fP (std::string &str)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &output, \fBVariant\fP const &variant)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bool sandbox::isBigEndian ()\fC [inline]\fP"
+
+.SS "bool sandbox::isLittleEndian ()\fC [inline]\fP"
+
+.SS "template<typename Iterator > bool sandbox::isPalindrome (Iteratorfront, Iteratorback)\fC [inline]\fP"
+
+.SS "bool sandbox::isPalindrome (std::string const &str)\fC [inline]\fP"
+
+.SS "bool sandbox::isPalindrome (char const *str)\fC [inline]\fP"
+
+.SS "std::ostream& sandbox::operator<< (std::ostream &output, Options &options)\fC [inline]\fP"
+
+.PP
+Writes all data to a output stream\&. 
+.SS "std::ostream& sandbox::operator<< (std::ostream &output, Variant const &variant)\fC [inline]\fP"
+
+.SS "std::istream& sandbox::operator>> (std::istream &input, Options &options)\fC [inline]\fP"
+
+.PP
+Reads key value pairs from an input stream\&. it's throws Options::invalid_format exception on misformatted input\&. 
+.SS "template<typename Iterator > void sandbox::printOut (Iteratorfront, Iteratorback)\fC [inline]\fP"
+
+.SS "template<typename Iterator > void sandbox::quickSort (Iteratorfront, Iteratorback)\fC [inline]\fP"
+
+.SS "template<typename T > std::vector<T>& sandbox::quickSort (std::vector< T > &sortable)\fC [inline]\fP"
+
+.SS "std::string& sandbox::reverse (std::string &str)\fC [inline]\fP"
+
+.SS "char* sandbox::reverse (char *str)\fC [inline]\fP"
+
+.SS "std::string& sandbox::reverseWords (std::string &str)\fC [inline]\fP"
+
+.SS "template<typename T > void sandbox::swap (T &a, T &b)\fC [inline]\fP"
+
+.SS "template<typename Iterator > void sandbox::swapInRange (Iteratorfront, Iteratorback)\fC [inline]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sandbox from the source code\&.

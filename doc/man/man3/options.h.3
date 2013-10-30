@@ -1,0 +1,50 @@
+.TH "F:/Projects/sandbox/src/options.h" 3 "Tue Oct 29 2013" "sandbox" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+F:/Projects/sandbox/src/options.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <map>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <ostream>\fP
+.br
+\fC#include <istream>\fP
+.br
+\fC#include <algorithm>\fP
+.br
+\fC#include 'variant\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBsandbox::Options\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "\fBsandbox\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBsandbox::operator<<\fP (std::ostream &output, Options &options)"
+.br
+.RI "\fIWrites all data to a output stream\&. \fP"
+.ti -1c
+.RI "std::istream & \fBsandbox::operator>>\fP (std::istream &input, Options &options)"
+.br
+.RI "\fIReads key value pairs from an input stream\&. it's throws Options::invalid_format exception on misformatted input\&. \fP"
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sandbox from the source code\&.
