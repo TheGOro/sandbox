@@ -9,12 +9,16 @@ set(PROJECT_BINARY_DIR build)
 set(PROJECT_TEST_DIR test)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
 if (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -Wextra -std=c++11")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -Wextra -std=c++11 -Wno-unused-local-typedefs -Wno-unused-parameter -fopenmp")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 endif()
 
 include(TestForSTDNamespace)
 add_executable(shed ${PROJECT_SOURCE_DIR}/*.cpp)
+
+find_package(PNG)
+add_executable(chromaaberration ${PROJECT_SOURCE_DIR}/boost/chromaaberration.cpp)
+target_link_libraries(chromaaberration ${PNG_LIBRARIES})
 
 # Unit testing
 option(build_tests "Build all unit test." ON)
