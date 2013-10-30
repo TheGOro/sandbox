@@ -45,6 +45,7 @@ namespace sandbox {
     }
     
     // Swaps two object of the same type in place (only for intrinsic types!)
+    // Just for demonstration purposes, use std::swap from algorithm
     template<typename T>
     inline void swap(T& a, T& b) {
     // The idea:
